@@ -6,13 +6,14 @@ import {Listar} from "./pages/exercicio1/exercicio1"
 import {HoraLocal} from "./pages/exercicio2/exercicio2"
 import {Formulario} from "./pages/exercicio3/exercicio3"
 import { Buscar } from './pages/exercicio4/exercicio4'
+import { TrocarDeCor } from './pages/Desafio/desafio'
 
 function App() {
   
 
   return (
     <>
-      <Buscar/>
+      <TrocarDeCor/>
     </>
   )
 }
