@@ -13,7 +13,7 @@ export function Buscar(){
         {id : 5, nome:"Xablau"},
     ]
     const pesquisa = lista.filter(e => (e.nome.toLowerCase()).includes(busca.toLowerCase()));
-    console.log(pesquisa);
+
     return(
         <>
         <h1>Titulo</h1>

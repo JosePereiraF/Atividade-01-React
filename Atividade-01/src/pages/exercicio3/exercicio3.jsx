@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Botao } from "../../components/Button/Button";
+import { Input } from "../../components/input/Input";
 
 export function Formulario(){
     const [novoUsuario , setNovoUsuario]= useState('');
@@ -28,20 +29,23 @@ export function Formulario(){
                 event.preventDefault();
             }} >
                 <label htmlFor="nome">Nome:</label>
-                <input type="text" 
-                value={novoNome}
+                <Input
+                valor={novoNome}
+                type={"text"}
                 onChange={(e)=> setNovoNome(e.target.value)}
                 />
                 <br />
                 <label htmlFor="idade">Idade:</label>
-                <input type="number"
-                value={novaIdade}
+                <Input
+                type={"number"}
+                valor={novaIdade}
                 onChange={(e)=> setNovaIdade(e.target.value)}
                 />
                 <br />
                 <label htmlFor="email">Email:</label>
-                <input type="text" 
-                value={novoEmail}
+                <Input
+                valor={novoEmail}
+                type={"text"}
                 onChange={(e)=> setNovoEmail(e.target.value)}
                 />
                 <br />
